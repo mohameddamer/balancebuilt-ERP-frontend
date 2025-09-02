@@ -1,0 +1,104 @@
+{
+  "vendors": [
+    {
+      "id": 1,
+      "code": "V001",
+      "name": "Global Supplies Inc",
+      "email": "sales@globalsup.com",
+      "phone": "+1-555-0101",
+      "city": "Dallas",
+      "country": "USA"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "sku": "PRD-1000",
+      "name": "Enterprise Widget",
+      "category": "Hardware",
+      "unit_price": 250.0,
+      "unit_cost": 150.0,
+      "supplier_id": 1
+    }
+  ],
+  "warehouses": [
+    {
+      "id": 1,
+      "code": "W001",
+      "name": "Main Distribution",
+      "location": "Dallas, TX"
+    }
+  ],
+  "purchase_orders": [
+    {
+      "id": 1,
+      "order_number": "PO-1000",
+      "vendor_name": "Global Supplies Inc",
+      "total_amount": 150000.0,
+      "order_date": "2025-08-20",
+      "approval_status": "approved"
+    }
+  ],
+  "sales_orders": [
+    {
+      "id": 1,
+      "order_number": "SO-1000",
+      "customer_name": "Enterprise Buyer",
+      "total_amount": 50000.0,
+      "order_date": "2025-09-01",
+      "status": "delivered"
+    }
+  ],
+  "inventory": [
+    {
+      "id": 1,
+      "product_id": 1,
+      "warehouse_id": 1,
+      "quantity": 12000,
+      "last_updated": "2025-09-02"
+    }
+  ],
+  "gl_accounts": [
+    {
+      "id": 1,
+      "code": "1000",
+      "name": "Cash",
+      "type": "Asset",
+      "balance": 1000000
+    },
+    {
+      "id": 2,
+      "code": "2000",
+      "name": "Accounts Payable",
+      "type": "Liability",
+      "balance": 50000
+    },
+    {
+      "id": 3,
+      "code": "4000",
+      "name": "Revenue",
+      "type": "Revenue",
+      "balance": 0
+    }
+  ],
+  "pl_snapshots": [
+    {
+      "id": 1,
+      "period_start": "2025-08-01",
+      "period_end": "2025-08-31",
+      "total_revenue": 500000.0,
+      "cogs": 200000.0,
+      "gross_profit": 300000.0,
+      "operating_expenses": 120000.0,
+      "net_profit": 150000.0,
+      "fx_gain_loss": 2000.0
+    }
+  ],
+  "kpis": [
+    {
+      "id": 1,
+      "name": "Gross Margin %",
+      "value": 60.0
+    }
+  ]
+}

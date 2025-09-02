@@ -1,0 +1,1 @@
+import React from 'react'; export default function SearchResults({data}){ if(!data) return <div className='card'>No results</div>; return (<div className='card'><h3>Search Results</h3><pre style={{whiteSpace:'pre-wrap'}}>{JSON.stringify(data,null,2)}</pre></div>); }
